@@ -1,0 +1,71 @@
+body {
+    background-color: #000000;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='794' height='95.3' viewBox='0 0 1000 120'%3E%3Cg fill='none' stroke='%23222' stroke-width='8.5' stroke-opacity='0.48'%3E%3Cpath d='M-500 75c0 0 125-30 250-30S0 75 0 75s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 45c0 0 125-30 250-30S0 45 0 45s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 105c0 0 125-30 250-30S0 105 0 105s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 15c0 0 125-30 250-30S0 15 0 15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500-15c0 0 125-30 250-30S0-15 0-15s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3Cpath d='M-500 135c0 0 125-30 250-30S0 135 0 135s125 30 250 30s250-30 250-30s125-30 250-30s250 30 250 30s125 30 250 30s250-30 250-30'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.cards {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.card>* {
+    flex: 1 1 160px;
+}
+
+.card {
+    margin-top: 80px;
+    position: relative;
+    max-width: 350px;
+    max-height: 250px;
+    box-shadow: 0 40px 60px -6px black;
+    border-radius: 4px;
+}
+
+.card-title {
+    font-family: cursive;
+    margin-bottom: 0;
+    display: block;
+    text-align: center;
+    color: red;
+    background-color: #004972;
+    padding: 2%;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.card img {
+    margin-top: 0;
+    width: 100%;
+    height: 98%;
+    object-fit: fill;
+    display: block;
+    position: relative;
+}
+
+.card-desc {
+    display: block;
+    font-size: 1.2rem;
+    position: absolute;
+    height: 0;
+    top: 0;
+    opacity: 0;
+    padding: 18px 8%;
+    background-color:slategrey;
+    overflow-y: scroll;
+    transition: 0.8s ease;
+    color: lightgreen;
+}
+
+.card-desc iframe {
+    width: fit-content;
+    background-color: black;
+}
+
+.card:hover .card-desc {
+    opacity: 1;
+    height: 100%;
+}

@@ -1,0 +1,43 @@
+section {
+    border: solid red 1px;
+    margin: 3px;
+    padding: 5px;
+    background-color: #423D33;
+}
+
+.heading {
+    color: #D3CEC4;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.image {
+    margin: 5px;
+    width: 300px;
+    height: fit-content;
+    float: left;
+}
+
+article {
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #A39E93;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+@media screen and (max-width:600px) {
+	.image {
+        width: 200px;
+    }
+
+    article {
+        font-size: 16px;
+    }
+
+    .heading {
+        font-size: 20px;
+    }
+}
+
