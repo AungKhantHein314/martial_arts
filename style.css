@@ -261,8 +261,10 @@ footer * {
 }
 
 footer main {
-	display: flex;
-	align-items: space-between;
+	display: flex !important;
+	flex-direction: row !important;
+	justify-content: space-around !important;
+	align-items: center !important;
 }
 
 .social, .contact {
@@ -280,13 +282,13 @@ ion-icon:hover, label:hover, div:hover {
 	margin-bottom: 10px;
 }
 
-@media (max-width: 850px) {
+@media only screen and (max-width: 850px) {
 	footer main {
 		flex-direction: column;
 	}
 }
 
-@media (max-width: 400px) {
+@media only screen and (max-width: 400px) {
 	.social, .contact {
 		font-size: medium;
 	}
