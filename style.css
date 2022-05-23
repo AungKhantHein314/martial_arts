@@ -272,7 +272,7 @@ footer main {
 	font-size: larger;
 }
 
-ion-icon:hover, label:hover, div:hover {
+footer ion-icon:hover, footer label:hover, footer div:hover {
 	filter: brightness(4);
 }
 
